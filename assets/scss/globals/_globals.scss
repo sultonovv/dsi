@@ -1,0 +1,14 @@
+.wrapper{
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 110%;
+}
+
+.container{
+    width: 100%;
+    max-width: $max-width-container;
+    padding: 0 24px;
+    margin: 0 auto;
+}

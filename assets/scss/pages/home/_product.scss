@@ -1,0 +1,53 @@
+.product{
+  padding: 50px 0;
+
+  &-row{
+    @include flex(center,space-between);
+    @include media(768){
+      flex-direction: column;
+    }
+  }
+  &-title{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: $main-font;
+    font-size: 32px;
+    line-height: 134%;
+    text-align: center;
+    color: $black-color;
+    font-weight: 500;
+  }
+
+  &-ponel{
+    max-width: 360px;
+    padding: 20px 20px 0 20px;
+    @include media(768){
+      text-align: center;
+    }
+
+    &__title{
+      font-family: $main-font;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 134%;
+      color: $red-color;
+      margin-bottom: 15px;
+    }
+
+    &__subtitle{
+      font-family: $main-font;
+      font-size: 18px;
+      line-height: 150%;
+      color: $subtitle-color;
+      font-weight: 400;
+      margin-bottom: 15px;
+    }
+    &__button{
+      border-radius: 4px;
+      padding: 10px 20px;
+      color: $white-color;
+      box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.25);
+      background: $red-color;
+    }
+  }
+}
